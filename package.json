@@ -1,0 +1,21 @@
+{
+  "name": "express-4",
+  "version": "1.0.0",
+  "description": "custom express-4.x scaffolding",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "run-script-os",
+    "dev:win32": "cls && SET DEBUG=express-4:* | npx nodemon app.js",
+    "dev:nix": "clear && DEBUG=express-4:* | npx nodemon app.js",
+    "prod": "node app.js"
+  },
+  "author": "Kamaran Layne <kamaran.layne@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "run-script-os": "^1.1.6"
+  }
+}
